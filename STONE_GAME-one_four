@@ -1,0 +1,36 @@
+//  -------------------------STONE GAME ONE FOUR--------------------------------------------------
+
+
+//  can remove either one or four move , if alice win print 
+//  yes , and if bob win print no,,, they both play the game 
+//  otimally..
+
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int t;
+    cin>>t;
+    while(t--){
+        int n;
+        cin>>n;
+        
+        int four_moves = n/4;
+        int one_moves  = n%4;
+        
+       int total_moves = four_moves+one_moves;
+       
+       if(total_moves %2 == 0){
+           cout<<"NO";
+       }
+        else if(total_moves%2 == 1){
+            cout<<"YES";
+        }
+          
+       
+    }
+
+    return 0;
+}
